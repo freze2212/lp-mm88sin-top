@@ -10,7 +10,6 @@
     // Fallback nếu không tải được domains.json (ví dụ chạy offline file://)
     var INLINE_DOMAINS = {
         "_default": DEFAULT_REGISTER_URL,
-        "mm88sin.top": DEFAULT_REGISTER_URL,
         "mm88ci.com": "https://mm88e9e27qc.mm4111.com/register.html"
     };
 
@@ -53,7 +52,6 @@
         } catch (e) {}
 
         window.SITE_CONFIG = {
-            domain: currentHost || 'mm88sin.top',
             registerUrl: targetUrl,
             allDomains: data
         };
