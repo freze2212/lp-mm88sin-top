@@ -5,7 +5,7 @@
 (function () {
     'use strict';
 
-    var DEFAULT_REGISTER_URL = 'https://mm88e9e23qc.mm2188.com/register.html';
+    var DEFAULT_REGISTER_URL = '#';
 
     // Fallback nếu không tải được domains.json (ví dụ chạy offline file://)
     var INLINE_DOMAINS = {

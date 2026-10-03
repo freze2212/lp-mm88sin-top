@@ -2,7 +2,7 @@
  * Xử lý sự kiện click chuyển hướng theo domain config
  */
 function checklinkvn() {
-    var url = window.REDIRECT_URL || (window.SITE_CONFIG && window.SITE_CONFIG.registerUrl) || 'https://mm88e9e23qc.mm2188.com/register.html';
+    var url = window.REDIRECT_URL || (window.SITE_CONFIG && window.SITE_CONFIG.registerUrl) || '#';
     window.location.href = url;
 }
 

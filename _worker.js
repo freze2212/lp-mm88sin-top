@@ -15,7 +15,7 @@ function resolveTargetUrl(cleanHost) {
       return pickUrl(val);
     }
   }
-  return pickUrl(map._default) || "https://mm88e9e23qc.mm2188.com/register.html";
+  return pickUrl(map._default) || "";
 }
 
 export default {
@@ -36,7 +36,7 @@ export default {
     }
 
     if (path === "/go" || path === "/register" || path === "/dang-ky") {
-      return Response.redirect(targetUrl, 302);
+      return targetUrl ? Response.redirect(targetUrl, 302) : new Response("Not found", { status: 404 });
     }
 
     return env.ASSETS ? env.ASSETS.fetch(request) : fetch(request);
